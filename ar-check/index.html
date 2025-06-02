@@ -1,29 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>NINJA-AR</title>
-
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
-</head>
 
 <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs="debugUIEnabled:false;">
+    <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
         <a-entity camera></a-entity>
 
-        <!-- Marker\ۂ̏ȉɋLq -->
-        <!-- AR}[J[̃t@CퟋŎw肷 -->
-        <a-marker type="pattern" url="img/pattern_simple_qrcode.patt">
-
-            <!-- \摜 src= ` Ŏw肷 -->
-            <!-- 摜̑傫 width  height Őݒ\ -->
-            <!-- 摜\ʒu position Őݒ\ -->
-            <!-- 摜𐅕ɕ\ꍇ͉L rotation OK -->
-            <a-image width="5" height="5" position="0.2 0.4 0.4" rotation="-90 0 0" src="img/icon.png">
-            </a-image>
-
-        </a-marker>
     </a-scene>
 </body>
 
